@@ -22,7 +22,7 @@ public class SwaggerConfig {
     public Docket apiAdmin() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.dio.live"))
+                .apis(RequestHandlerSelectors.basePackage("com.indeas.controlepontoacesso"))
                 .paths(PathSelectors.ant("/**"))
                 .build()
                 .apiInfo(apiInfo())
@@ -45,7 +45,7 @@ public class SwaggerConfig {
                 .version("1.0.0")
                 .license("Apache License Version 2.0")
                 .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0")
-                .contact(new Contact("DIO", "https://web.digitalinnovation.one", "contato@digitalinnovationone.com.br"))
+                .contact(new Contact("DIO", "https://web.digitalinnovation.one", "alexlima_cti@hotmail.com"))
                 .build();
     }
 }
